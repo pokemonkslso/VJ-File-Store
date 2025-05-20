@@ -20,10 +20,10 @@ def is_enabled(value, default):
 # Bot Information
 API_ID = int(environ.get("API_ID", "17544712"))
 API_HASH = environ.get("API_HASH", "62252ec6dbed0c3597d492e9c9406ec9")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+BOT_TOKEN = environ.get("BOT_TOKEN", "7256324551:AAH7AL7RXZcG0ntbZAKwcE6C4oAt4RQW9bI")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7621649725 7794671732').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7621649725').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "Gusionafk_bot") # without @
 PORT = environ.get("PORT", "8080")
 
@@ -36,7 +36,7 @@ CDB_NAME = environ.get("CDB_NAME", "clonetechvj")
 
 # Database Information
 DB_URI = environ.get("DB_URI", "mongodb+srv://m272729926:91gBYkHTm7DYshAK@cluster0.kyurlnx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DB_NAME = environ.get("DB_NAME", "techvjbotz")
+DB_NAME = environ.get("DB_NAME", "m272729926")
 
 # Auto Delete Information
 AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', True)) # Set True or False
@@ -47,7 +47,7 @@ AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Second
 
 # Channel Information
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002430412835"))
-
+BOT_USERNAME = environ.get("BOT_USERNAME", "Gusionafk_bot")
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
